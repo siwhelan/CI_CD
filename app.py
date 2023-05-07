@@ -14,16 +14,29 @@ def hello():
                     max-width: 800px;
                     margin: 0 auto;
                     padding: 30px;
+                    line-height: 1.6;
+                    color: #34495e;
                 }
 
                 h1 {
                     color: #2c3e50;
+                    font-size: 32px;
+                    margin-bottom: 20px;
                 }
 
                 p {
                     font-size: 18px;
-                    line-height: 1.6;
-                    color: #34495e;
+                    margin-bottom: 20px;
+                }
+
+                ol {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                }
+
+                li {
+                    margin-bottom: 10px;
                 }
             </style>
         </head>
@@ -40,6 +53,7 @@ def hello():
             <p>This pipeline automates the process of building, testing, and deploying the Flask application, allowing developers to focus on writing code and implementing new features. Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.</p>
         </body>
     </html>
+
     """
 
 
