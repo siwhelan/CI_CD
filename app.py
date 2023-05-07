@@ -28,8 +28,8 @@ def hello():
             </style>
         </head>
         <body>
-            <h1>Welcome to the Simple Flask Web Application for Demonstrating CI/CD!</h1>
-            <p>This application showcases a seamless integration of a CI/CD pipeline using GitHub Actions and Azure Web Apps. The purpose of this app is to help developers understand how code changes can be automatically tested, built, and deployed to a live environment. By exploring this example, you will learn about developing a minimal Flask application, containerizing it using Docker, and setting up a CI/CD pipeline with GitHub Actions and Azure Web Apps.</p>
+            <h1>This is a simple Flask Web Application for Demonstrating CI/CD!</h1>
+            <p>This application showcases a seamless integration of a CI/CD pipeline using GitHub Actions and Azure Web Apps. The purpose of this app is to help developers understand how code changes can be automatically tested, built, and deployed to a live environment. By exploring this example, you will learn about developing a minimal Flask application, containerising it using Docker, and setting up a CI/CD pipeline with GitHub Actions and Azure Web Apps.</p>
             <p>The workflow of this pipeline includes the following steps:</p>
             <ol>
                 <li><b>Get the code</b>: Retrieve the source code from the main branch of the GitHub repository.</li>
@@ -37,7 +37,7 @@ def hello():
                 <li><b>Build and push Docker image</b>: Create a Docker container image of the Flask application and push it to Docker Hub.</li>
                 <li><b>Deploy to Azure Web App</b>: Automatically deploy the application to an Azure Web App, making it accessible via a domain.</li>
             </ol>
-            <p>In summary, this pipeline automates the process of building, testing, and deploying the Flask application, allowing developers to focus on writing code and implementing new features. Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.</p>
+            <p>This pipeline automates the process of building, testing, and deploying the Flask application, allowing developers to focus on writing code and implementing new features. Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.</p>
         </body>
     </html>
     """
