@@ -1,4 +1,4 @@
-# Simple Flask Web App for Demonstrating CI/CD 🚀🔧🔄
+# A imple Flask Web App demonstrating CI/CD 🚀🔧🔄
 
 This repository contains a minimal Flask web application designed to showcase a CI/CD pipeline using GitHub Actions and Azure Web Apps. The purpose of this project is to help developers understand how code changes can be automatically tested, built, and deployed to a live environment.
 
