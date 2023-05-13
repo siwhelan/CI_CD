@@ -67,6 +67,27 @@ def hello():
                 Azure Web App, making it accessible via a domain.</li>
             </ol>
 
+            <p>In addition to the steps explained above, this pipeline also includes a security aspect - the CodeQL Analysis. 
+            CodeQL is a semantic code analysis engine, used mainly for finding security vulnerabilities in code. 
+            It treats code as data, allowing you to explore code in a detailed and relational manner.</p>
+
+            <p>The CodeQL Analysis in this pipeline includes the following steps:</p>
+
+            <ol>
+                <li><b>Initialize CodeQL</b>: This step initializes the CodeQL engine on the runner. 
+                It downloads the CodeQL CLI and the CodeQL packs that correspond to the languages detected in the repository.</li>
+                <li><b>Autobuild</b>: CodeQL has an autobuild step that attempts to build any compiled languages in the project. 
+                This is not always necessary, depending on the language and nature of the project.</li>
+                <li><b>Perform CodeQL Analysis</b>: This step performs the actual CodeQL analysis. After the analysis is complete, 
+                the action creates a SARIF output file storing any results found by the queries.</li>
+            </ol>
+
+            <p>Once the analysis is complete, the results are uploaded to GitHub, 
+            and you can see them in the Security tab of the repository.
+            CodeQL helps in identifying potential vulnerabilities early in the development lifecycle, 
+            thereby improving the security posture of the application.</p>
+
+
             <p>
                 This pipeline automates the process of building, testing, and deploying
                 the Flask application, allowing developers to focus on writing code and
