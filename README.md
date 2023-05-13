@@ -12,8 +12,9 @@ The pipeline is built using GitHub Actions and Azure Web Apps, and includes the 
 
 1. **Get the code**: Retrieve the source code from the main branch of the GitHub repository.
 2. **Prepare the environment**: Set up the necessary Python and Docker tools required for building and deploying the app.
-3. **Build and push Docker image**: Create a Docker container image of the Flask application and push it to Docker Hub.
-4. **Deploy to Azure Web App**: Automatically deploy the application to an Azure Web App, making it accessible via a domain.
+3. **Check code formatting with Black**: Ensure all Python files adhere to the standard code formatting rules as defined by the Black formatter.</li>
+4. **Build and push Docker image**: Create a Docker container image of the Flask application and push it to Docker Hub.
+5. **Deploy to Azure Web App**: Automatically deploy the application to an Azure Web App, making it accessible via a domain.
 
 This pipeline automates the process of building, testing, and deploying the Flask application, allowing developers to focus on writing code and implementing new features. Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.
 

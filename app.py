@@ -51,23 +51,22 @@ def hello():
             </p>
             <p>The workflow of this pipeline includes the following steps:</p>
             <ol>
-                <li>
-                    <b>Get the code</b>: Retrieve the source code from the main branch
-                    of the GitHub repository.
-                </li>
-                <li>
-                    <b>Prepare the environment</b>: Set up the necessary Python and
-                    Docker tools required for building and deploying the app.
-                </li>
-                <li>
-                    <b>Build and push Docker image</b>: Create a Docker container image
-                    of the Flask application and push it to Docker Hub.
-                </li>
-                <li>
-                    <b>Deploy to Azure Web App</b>: Automatically deploy the application
-                    to an Azure Web App, making it accessible via a domain.
-                </li>
+                <li><b>Get the code</b>: Retrieve the source code from the main branch 
+                of the GitHub repository.</li>
+
+                <li><b>Prepare the environment</b>: Set up the necessary Python and Docker tools 
+                required for building and deploying the app.</li>
+
+                <li><b>Check code formatting with Black</b>: Ensure all Python files adhere to the
+                standard code formatting rules as defined by the Black formatter.</li>
+
+                <li><b>Build and push Docker image</b>: Create a Docker container image of the 
+                Flask application and push it to Docker Hub.</li>
+
+                <li><b>Deploy to Azure Web App</b>: Automatically deploy the application to an 
+                Azure Web App, making it accessible via a domain.</li>
             </ol>
+
             <p>
                 This pipeline automates the process of building, testing, and deploying
                 the Flask application, allowing developers to focus on writing code and
