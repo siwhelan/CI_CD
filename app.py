@@ -10,17 +10,20 @@ def hello():
         <head>
             <style>
                 body {
-                    font-family: Arial, sans-serif;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     max-width: 800px;
                     margin: 0 auto;
                     padding: 30px;
                     line-height: 1.6;
-                    color: #34495e;
+                    color: #333;
+                    background-color: #f7f7f7;
                 }
                 h1 {
-                    color: #2c3e50;
-                    font-size: 32px;
+                    color: #5c5c5c;
+                    font-size: 36px;
                     margin-bottom: 20px;
+                    border-bottom: 2px solid #5c5c5c;
+                    padding-bottom: 10px;
                 }
                 p {
                     font-size: 18px;
@@ -33,6 +36,13 @@ def hello():
                 }
                 li {
                     margin-bottom: 10px;
+                }
+                a {
+                    color: #0076d6;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
                 }
             </style>
         </head>
@@ -51,20 +61,12 @@ def hello():
             </p>
             <p>The workflow of this pipeline includes the following steps:</p>
             <ol>
-                <li><b>Get the code</b>: Retrieve the source code from the main branch 
-                of the GitHub repository.</li>
-
-                <li><b>Prepare the environment</b>: Set up the necessary Python and Docker tools 
-                required for building and deploying the app.</li>
-
-                <li><b>Check code formatting with Black</b>: Ensure all Python files adhere to the
-                standard code formatting rules as defined by the Black formatter.</li>
-
-                <li><b>Build and push Docker image</b>: Create a Docker container image of the 
-                Flask application and push it to Docker Hub.</li>
-
-                <li><b>Deploy to Azure Web App</b>: Automatically deploy the application to an 
-                Azure Web App, making it accessible via a domain.</li>
+                <li><b>Get the code</b> 📚: Retrieve the source code from the main branch of the GitHub repository.</li>
+                <li><b>Prepare the environment</b> ⚙️: Set up the necessary Python and Docker tools required for building and deploying the app.</li>
+                <li><b>Check code formatting with Black</b> 🎨: Ensure all Python files adhere to the standard code formatting rules as defined by the Black formatter.</li>
+                <li><b>Perform CodeQL Analysis</b> 🔍: Initialize the CodeQL engine, auto build the project, and perform a comprehensive code analysis to identify potential security vulnerabilities.</li>
+                <li><b>Build and push Docker image</b> 🐳: Create a Docker container image of the Flask application and push it to Docker Hub.</li>
+                <li><b>Deploy to Azure Web App</b> 🚀: Automatically deploy the application to an Azure Web App, making it accessible via a domain.</li>
             </ol>
 
             <p>In addition to the steps explained above, this pipeline also includes a security aspect - the CodeQL Analysis. 
