@@ -52,7 +52,9 @@ def hello():
                 <li><b>Deploy to Azure Web App</b>: Automatically deploy the application to an Azure Web App, making it accessible via a domain.</li>
             </ol>
             <p>This pipeline automates the process of building, testing, and deploying the Flask application, allowing developers to focus on writing code and implementing new features. 
-            Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.</p>
+            Any changes made to the application will trigger the pipeline, ensuring that the live environment is always up-to-date.
+            <br>
+        The source code can be found here - https://github.com/siwhelan/CI_CD</p>
         </body>
     </html>
 
